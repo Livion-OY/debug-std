@@ -18,7 +18,7 @@ const debugInfo = debugOut('app:info');
 debugError('this is error');
 debugInfo('this is info');
 ```
-Test it by running
+Test by running
 
 ```
 node app.js 2> err.log 1> out.log
