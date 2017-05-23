@@ -11,9 +11,19 @@
   "dependencies": {
     "debug": "2"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livion-OY/debug-std.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Livion-OY/debug-std/issues"
+  },
+  "homepage": "https://github.com/Livion-OY/debug-std#readme"
 }
