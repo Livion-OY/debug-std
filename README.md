@@ -10,6 +10,8 @@ Instead if single debug function, it is separated to debugErr and debugOut funct
 Example:
 
 ```
+process.env.DEBUG = 'app:*';
+
 const { debugErr, debugOut } = require('debug-std');
 
 const debugError = debugErr('app:error');
