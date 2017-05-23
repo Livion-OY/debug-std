@@ -1,13 +1,16 @@
 # debug-std
-Tiny helper to npm debug module, that makes writing to **stdout** and **stderr** simpler.
+Tiny wrapper for npm [debug](https://www.npmjs.com/package/debug) module, that makes writing to **stdout** and **stderr** simpler.
+We are using it in Kubernetes. It should be useful with systemctl also.
 
 ## Usage
 
 Very similar to [debug](https://www.npmjs.com/package/debug)
 
-Instead if single debug function, it is separated to debugErr and debugOut functions. DebugErr writes output to stderr and debugOut writes to stdout.
+Differences:
+* Instead if single debug function, it is separated to err and out functions. Err writes output to stderr and out writes to stdout.
+* Doesn't use timestamps as prefixes, since they are added automatically.
 
-Example:
+## Example:
 
 ```
 process.env.DEBUG = 'app:*';
