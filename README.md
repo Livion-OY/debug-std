@@ -1,5 +1,5 @@
 # debug-std
-Tiny helper to npm debug module, that wraps writing to stdout and stderr in simple way
+Tiny helper to npm debug module, that makes writing to stdout and stderr simpler.
 
 ## Usage
 
