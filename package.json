@@ -1,0 +1,19 @@
+{
+  "name": "debug-std",
+  "version": "0.1.0",
+  "description": "Tiny helper to npm debug module, that wraps writing to stdout and stderr in simple way",
+  "main": "index.js",
+  "keywords": [
+    "debug"
+  ],
+  "author": "Toni Lahnalampi",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "2"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
