@@ -12,10 +12,10 @@ Example:
 ```
 process.env.DEBUG = 'app:*';
 
-const { debugErr, debugOut } = require('debug-std');
+const { err, out } = require('debug-std');
 
-const debugError = debugErr('app:error');
-const debugInfo = debugOut('app:info');
+const debugError = err('app:error');
+const debugInfo = out('app:info');
 
 debugError('this is error');
 debugInfo('this is info');

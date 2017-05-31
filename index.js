@@ -11,14 +11,20 @@ function logErr() {
   return process.stderr.write(util.format.apply(util, arguments) + '\n');
 }
 
-module.exports.debugErr = function(prefix) {
+function debugErr(prefix) {
   let d = debug(prefix);
   d.log = logErr
   return d;
 }
 
-module.exports.debugOut = function(prefix) {
+function debugOut(prefix) {
   let d = debug(prefix);
   d.log = logOut
   return d;
 }
+
+module.exports.err = debugErr
+module.exports.out = debugOut
+// deprecated
+module.exports.debugErr = debugErr
+module.exports.debugOut = debugOut
