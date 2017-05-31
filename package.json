@@ -1,6 +1,6 @@
 {
   "name": "debug-std",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tiny helper to npm debug module, that wraps writing to stdout and stderr in simple way",
   "main": "index.js",
   "keywords": [
